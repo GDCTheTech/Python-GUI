@@ -1,0 +1,20 @@
+import tkinter as tk
+
+# Create the main window
+window = tk.Tk()
+
+# Create a label widget
+label = tk.Label(window, text="Welcome, Child of Rorschach")
+
+# Create a button widget
+button = tk.Button(window, text="Let Us Begin.")
+
+# Bind the click event to the button widget
+button.bind("<Button-1>", lambda event: label.config(text="Or End."))
+
+# Place the label and button widgets on the main window
+label.pack()
+button.pack()
+
+# Start the main loop
+window.mainloop()
